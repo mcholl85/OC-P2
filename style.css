@@ -1,0 +1,276 @@
+/* Général */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+#container {
+    width: 100%;
+    max-width: 1200px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color:#0065FC;
+}
+article {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+}
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav img {
+    height: 40px;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    padding: 10px 15px;
+}
+nav a:hover {
+    border-top: 2px solid #0065FC;
+}
+
+/* Section Formulaire */
+
+#formulaire li > a:hover {
+    color:#0065FC;
+}
+#formulaire form i,input,button {
+    padding: 14px;
+    border: 0;
+    font-weight: bold;
+}
+#formulaire form i {
+    background-color:#F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#formulaire form button {
+    color: white;
+    background-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#formulaire ul {
+    display: flex;
+    align-items: center;
+}
+#formulaire li:not(:first-child) {
+    margin: 10px;
+}
+#formulaire li:first-child {
+    margin: 20px 20px 20px 0;
+}
+#formulaire a > i {
+    color:#0065FC;
+    background-color: #DEEBFF;
+    padding: 14px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+#formulaire li > a {
+    padding: 10px 15px 10px 0;
+    border: 3px solid #F2F2F2;
+    border-radius: 20px;
+    font-weight: bold;
+}
+#formulaire div {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+#formulaire div p {
+    padding-left: 10px;
+}
+.info {
+    color: #0065FC;
+    font-size: 12px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+    padding: 8px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+}
+
+/* Main */
+
+main {
+    display: flex;
+}
+main section {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+/* Section populaire */
+
+#populaire {
+    display: flex;
+    flex-direction: column;
+}
+#populaire h3 {
+    margin-bottom: 40px;
+}
+#populaire article {
+    width: 290px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 5px;
+    display: flex;
+}
+#populaire article div:first-child {
+    max-width: 40%;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+    display: flex;
+}
+#populaire img {
+    width: 100%;
+    object-fit: cover;
+}
+#populaire article div:last-child {
+    margin: 0 20px 0 10px;
+}
+#populaire article div:last-child h5 {
+    margin: 10px 0;
+}
+#populaire article div:last-child p {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+#populaire article div:last-child i {
+    color:#0065FC;
+}
+
+/* Section Hébergements */
+
+#hebergements {
+    margin-right: 20px;
+}
+
+#hebergements div article {
+    width: 200px;
+    height: 170px;
+    padding: 5px 5px;
+    margin: 20px 20px 20px 0px;
+    background-color: white;
+    border-radius: 10%;
+}
+#hebergements p:last-child {
+    font-weight: bold;
+}
+.galeries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.photo {
+    height: 60%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 10% 10% 0px 0px;
+}
+.photo img {
+    width: 100%;
+}
+.description h5, .description p {
+    margin: 5px;
+}
+.description p {
+    font-size: 12px;
+}
+.description i {
+    color: #0065FC;
+}
+
+/* Section Activités */
+
+#activites {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+#activites div {
+    display: flex;
+}
+#activites > div {
+    max-height: 450px;
+    justify-content: space-between;
+}
+#activites div > div {
+    flex-direction: column;
+    margin-right: 40px;
+}
+#activites div > div:last-child {
+    margin-right: 0;
+}
+#activites article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 10px 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.port {
+    flex: 1;
+}
+.fort {
+    flex: 3;
+}
+.iles {
+    flex: 2;
+}
+.calanques {
+    flex: 1;
+}
+.eglise {
+    flex: 9;
+}
+.longchamp {
+    flex: 10;
+}
+#activites article > img {
+    flex: 5;
+    overflow: hidden;
+}
+#activites img {
+    width: 100%;
+    object-fit: cover;
+}
+#activites p {
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    padding: 30px;
+}
+footer div {
+    margin-right: auto;
+}
+footer li {
+    margin-bottom: 10px;
+}
