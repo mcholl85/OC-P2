@@ -7,6 +7,12 @@ body {
 #container {
     margin: 0 50px 50px 50px;
 }
+@media screen and (max-width: 768px)
+{
+    #container {
+        margin: 0;
+    }
+}
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -17,10 +23,6 @@ a {
 }
 a:hover {
     color:#0065FC;
-}
-.active {
-    color:#0065FC;
-    border-top: 2px solid #0065FC;
 }
 article {
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
@@ -37,7 +39,6 @@ article {
     word-spacing: -3px;
 }
 /* Header */
-
 header {
     padding-top: 26px;
 }
@@ -58,7 +59,46 @@ nav a {
 nav a:hover {
     border-top: 2px solid #0065FC;
 }
-
+.active {
+    color:#0065FC;
+    border-top: 2px solid #0065FC;
+}
+@media screen and (max-width: 768px)
+{
+    nav {
+       flex-direction: column;
+       align-items: center; 
+    }
+    nav img {
+        margin: 0 0 30px;
+    }
+    nav a {
+        border-top: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+    .active {
+        border-top: 0;
+    }
+    nav a:hover {
+        border-top: 0;
+    }
+    nav ul {
+        width: 100%;
+        margin: 0;
+    }
+    nav li {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    nav li:first-child {
+        border-bottom: 3px solid #0065FC;
+    }
+    nav li:last-child {
+        border-bottom: 3px solid #F2F2F2;
+    }
+}
 /* Section Formulaire */
 #formulaire {
     margin-bottom: 30px;
@@ -110,6 +150,9 @@ nav a:hover {
 #filtres {
     margin-bottom: 30px;
 }
+#filtres > div:first-child {
+    font-size: 21px;
+}
 #filtres div {
     margin: 0 25px 0 0;
 }
@@ -149,6 +192,28 @@ nav a:hover {
     width: 20px;
     font-family: 'Rokkitt', 'serif';
 }
+@media screen and (max-width: 768px)
+{
+    #formulaire {
+        margin: 30px 20px;
+    }
+    #formulaire form {
+        margin: 30px 0;
+    }
+    #formulaire h2 {
+        margin: 0;
+    }
+    #filtres {
+        flex-wrap: wrap;
+    }
+    #filtres > div:first-child {
+        margin-bottom: 15px;
+    }
+    #filtres > div:last-child {
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+}
 
 /* Main */
 
@@ -164,6 +229,12 @@ main h2 {
 }
 main h3 {
     font-size: 18px;
+}
+@media screen and (max-width: 768px)
+{
+    main {
+        flex-direction: column;
+    }
 }
 /* Section populaire */
 
@@ -219,13 +290,23 @@ main h3 {
     margin: 0;
     padding-top: 8px;
 }
+@media screen and (max-width: 768px)
+{
+    main section {
+        border-radius: 0;
+    }
+    #populaire {
+        order: 1;
+        margin-left: 0;
+        padding: 40px 20px;
+    }
+}
 /* Section Hébergements */
 
 #hebergements {
     padding: 40px;
     flex: 2;
 }
-
 #hebergements div article {
     min-width: 180px;
     width: 30%;
@@ -260,8 +341,20 @@ main h3 {
     font-size: 120%;
     font-weight: bold;
 }
-
-
+@media screen and (max-width: 768px)
+{
+    #hebergements {
+        order: 2;
+        background-color: white;
+        padding: 40px 20px;
+    }
+    #hebergements div article {
+        width: 100%;
+    }
+    .galeries {
+        margin-bottom: 0;
+    }
+}
 /* Section Activités */
 
 #activites {
@@ -322,8 +415,34 @@ main h3 {
     font-size: 19px;
     padding-left: 15px;
 }
+@media screen and (max-width: 768px)
+{
+    #activites {
+        margin: 10px 20px 30px 20px;
+    }
+    #activites > div {
+        flex-direction: column;
+        max-height: none;
+    }
+    #activites div > div {
+        margin-right: 0;
+    }
+    #activites article {
+        margin: 0;
+        max-height: 190px;
+        margin-bottom: 20px;
+    }
+}
 
 /* Footer */
+
+@media screen and (max-width: 768px)
+{
+    footer {
+        flex-direction: column;
+        padding: 20px 40px;
+    }
+}
 
 footer {
     background-color: #F2F2F2;
@@ -333,6 +452,10 @@ footer {
 footer div {
     margin-right: auto;
 }
+footer h3 {
+    font-size: 21px;
+}
 footer li {
     margin-bottom: 10px;
+    font-size: 18px;
 }
