@@ -387,7 +387,7 @@ main h3 {
         width: 100%;
     }
     .galeries {
-        margin-bottom: 0;
+        padding-bottom: 0;
     }
 }
 /* Section Activités */
@@ -405,6 +405,7 @@ main h3 {
     justify-content: space-between;
 }
 #activites div > div {
+    width: 25%;
     flex-direction: column;
     margin-right: 40px;
 }
@@ -456,11 +457,15 @@ main h3 {
     #activites {
         margin: 10px 20px 30px 20px;
     }
+    #activites h2 {
+        margin: 10px 0 25px;
+    }
     #activites > div {
         flex-direction: column;
         max-height: none;
     }
     #activites div > div {
+        width:100%;
         margin-right: 0;
     }
     #activites figure {
