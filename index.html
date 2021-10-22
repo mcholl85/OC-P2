@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/da72397d66.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -16,14 +16,14 @@
 <body>
     <header>    
         <nav>
-            <img src="images/logo/Booki.png" alt="logo Booki">   
+            <img src="/assets/images/logo/Booki.png" alt="logo Booki">   
             <ul>
-                <li><a class="active" href="#hebergements">Hébergements</a></li>
-                <li><a href="#activites">Activités</a></li>
+                <li><a class="active" href="#lodging">Hébergements</a></li>
+                <li><a href="#activity">Activités</a></li>
             </ul>  
         </nav>
     </header>
-    <section id="formulaire">
+    <section id="searchCity">
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
         <form method="get">
@@ -31,128 +31,128 @@
             <input type="search" value="Marseille, France">
             <button><i class="fas fa-search"></i></button>
         </form>
-        <div id="filtres">
+        <div id="filters">
             <h3>Filtres</h3>
             <div>
-                <div><a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a></div>
-                <div><a href="#"><i class="fas fa-child"></i>Familial</a></div>
-                <div><a href="#"><i class="fas fa-heart"></i>Romantique</a></div>
-                <div><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></div>    
+                <div><a href="#"><i class="fas fa-money-bill-wave iconFilters"></i>Économique</a></div>
+                <div><a href="#"><i class="fas fa-child iconFilters"></i>Familial</a></div>
+                <div><a href="#"><i class="fas fa-heart iconFilters"></i>Romantique</a></div>
+                <div><a href="#"><i class="fas fa-dog iconFilters"></i>Animaux autorisés</a></div>    
             </div>
         </div>
-        <div>
-            <span class="info">i</span>
+        <div id="available">
+            <span id="infoIcon">i</span>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
     <main>
-        <section id="hebergements">
+        <section id="lodging">
             <h2>Hébergements à Marseille</h2>
-            <div class="galeries">
+            <div id="galleryLodging">
                 <article>
                     <a href="#">
-                        <div class="photo">
-                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebière">
+                        <div id="photoLodging">
+                            <img src="assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebière">
                         </div>
-                        <div class="description">
+                        <div id="descLodging">
                             <h3>Auberge La Cannebière</h3>
                             <p>Nuit à partir de <strong>25€</strong></p>
-                            <div class="nospace">
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill grey"></i>
+                            <div class="spaceStars">
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill greyStar"></i>
                             </div>
                         </div>
                     </a>
                 </article>
                 <article>
                     <a href="#">
-                        <div class="photo">
-                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel du port">
+                        <div id="photoLodging">
+                            <img src="assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel du port">
                         </div>
-                        <div class="description">
+                        <div id="descLodging">
                             <h3>Hôtel du port</h3>
                             <p>Nuit à partir de <strong>52€</strong></p>
-                            <div class="nospace">
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
+                            <div class="spaceStars">
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
                             </div>
                         </div>
                     </a>
                 </article>
                 <article>
                     <a href="#">
-                        <div class="photo">
-                            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel les mouettes">
+                        <div id="photoLodging">
+                            <img src="assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel les mouettes">
                         </div>
-                        <div class="description">
+                        <div id="descLodging">
                             <h3>Hôtel Les mouettes</h3>
                             <p>Nuit à partir de <strong>76€</strong></p>
-                            <div class="nospace">
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill grey"></i>
+                            <div class="spaceStars">
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill greyStar"></i>
                             </div>
                         </div>
                     </a>
                 </article>
                 <article>
                     <a href="#">
-                        <div class="photo">
-                            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel de la mer">
+                        <div id="photoLodging">
+                            <img src="assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel de la mer">
                         </div>
-                        <div class="description">
+                        <div id="descLodging">
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de <strong>46€</strong></p>
-                            <div class="nospace">
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill grey"></i>
-                                <i class="bi bi-star-fill grey"></i>
+                            <div class="spaceStars">
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill greyStar"></i>
+                                <i class="bi bi-star-fill greyStar"></i>
                             </div>
                         </div>
                     </a>
                 </article>
                 <article>
                     <a href="#">
-                        <div class="photo">
-                            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="hôtel le panier">
+                        <div id="photoLodging">
+                            <img src="assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="hôtel le panier">
                         </div>
-                        <div class="description">
+                        <div id="descLodging">
                             <h3>Hôtel Le Panier</h3>
                             <p>Nuit à partir de <strong>23€</strong></p>
-                            <div class="nospace">
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill grey"></i>
+                            <div class="spaceStars">
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill greyStar"></i>
                             </div>
                         </div>
                     </a>
                 </article>
                 <article>
                     <a href="#">
-                        <div class="photo">
-                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hôtel chez amina">
+                        <div id="photoLodging">
+                            <img src="assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hôtel chez amina">
                         </div>
-                        <div class="description">
+                        <div id="descLodging">
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de <strong>96€</strong></p>
-                            <div class="nospace">
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
+                            <div class="spaceStars">
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
                             </div>
                         </div>
                     </a>
@@ -160,7 +160,7 @@
             </div>
             <a href="#">Afficher plus</a>
         </section>
-        <section id="populaire">
+        <section id="topLodging">
             <div>
                 <h2>Les plus populaires</h2>
                 <i class="fas fa-chart-line"></i>
@@ -168,60 +168,60 @@
             <div>
                 <a href="#">
                     <article>
-                        <div class="photos_populaire">
-                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hôtel le soleil du matin">
+                        <div id="photoTopLogding">
+                            <img src="assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hôtel le soleil du matin">
                         </div>
-                        <div class="desc_populaire">
+                        <div id="descTopLodging">
                             <div>
                                 <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de <strong>128€</strong></p>
                             </div>
-                            <div class="nospace">
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
+                            <div class="spaceStars">
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
                             </div>
                         </div>
                     </article>
                 </a>    
                 <a href="#">
                     <article>
-                        <div class="photos_populaire">
-                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                        <div id="photoTopLogding">
+                            <img src="assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
                         </div>
-                        <div class="desc_populaire">
+                        <div id="descTopLodging">
                             <div>
                                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p>Nuit à partir de <strong>71€</strong></p>
                             </div>
-                            <div class="nospace">
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill grey"></i>
+                            <div class="spaceStars">
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill greyStar"></i>
                             </div>
                         </div>
                     </article>
                 </a>
                 <a href="#">    
                     <article>
-                        <div class="photos_populaire">
-                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hôtel tout bleu et blanc">
+                        <div id="photoTopLogding">
+                            <img src="assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hôtel tout bleu et blanc">
                         </div>
-                        <div class="desc_populaire">
+                        <div id="descTopLodging">
                             <div>
                                 <h3>Hôtel Tout bleu et Blanc</h3>
                                 <p>Nuit à partir de <strong>68€</strong></p>    
                             </div>
-                            <div class="nospace">
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill blue"></i>
-                                <i class="bi bi-star-fill grey"></i>
+                            <div class="spaceStars">
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill blueStar"></i>
+                                <i class="bi bi-star-fill greyStar"></i>
                             </div>
                         </div>
                     </article>
@@ -229,38 +229,38 @@
             </div>        
         </section>
     </main>
-    <section id="activites">
+    <section id="activity">
         <h2>Activités à Marseille</h2>
         <div>
             <div>
-                <figure class="port">
-                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
+                <figure id="port">
+                    <img src="assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
                     <figcaption>Vieux Port</figcaption>
                 </figure>
             </div>
             <div>
-                <figure class="fort">
-                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomègues">
+                <figure id="fort">
+                    <img src="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomègues">
                     <figcaption>Fort de Pomègues</figcaption>
                 </figure>
-                <figure class="iles">
-                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du frioul">
+                <figure id="island">
+                    <img src="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du frioul">
                     <figcaption>Îles du Frioul</figcaption>
                 </figure>
             </div>
             <div>
-                <figure class="calanques">
-                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc national des calanques">
+                <figure id="parknational">
+                    <img src="assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc national des calanques">
                     <figcaption>Parc National des Calanques</figcaption>
                 </figure>
             </div>
             <div>
-                <figure class="eglise">
-                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame de la garde">
+                <figure id="church">
+                    <img src="/assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame de la garde">
                     <figcaption>Notre-Dame-de-la-Garde</figcaption>
                 </figure>
-                <figure class="longchamp">
-                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamps">
+                <figure id="park">
+                    <img src="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamps">
                     <figcaption>Parc Longchamps</figcaption>
                 </figure>
             </div>
