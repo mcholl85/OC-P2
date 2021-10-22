@@ -55,7 +55,7 @@ nav a:hover {
     color:#0065FC;
     border-top: 2px solid #0065FC;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     header {
         margin: 0;
@@ -199,7 +199,7 @@ nav a:hover {
     min-width: 20px;
     font-family: 'Rokkitt', 'serif';
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     #formulaire {
         margin: 30px 20px;
@@ -240,7 +240,10 @@ nav a:hover {
         align-items: baseline;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
 
+}
 /* Main */
 
 main {
@@ -257,7 +260,7 @@ main h2 {
 main h3 {
     font-size: 18px;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     main {
         margin: 0;
@@ -318,7 +321,7 @@ main h3 {
     margin: 0;
     padding-top: 8px;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     main section {
         border-radius: 0;
@@ -373,7 +376,7 @@ main h3 {
     font-size: 120%;
     font-weight: bold;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     #hebergements {
         order: 2;
@@ -449,7 +452,7 @@ main h3 {
     font-size: 19px;
     padding-left: 15px;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     #activites {
         margin: 10px 20px 30px 20px;
@@ -474,7 +477,7 @@ main h3 {
 
 /* Footer */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     footer {
         flex-direction: column;
