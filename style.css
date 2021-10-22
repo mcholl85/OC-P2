@@ -530,14 +530,6 @@ main h3 {
 }
 /* Footer */
 
-@media screen and (max-width: 767px)
-{
-    footer {
-        flex-direction: column;
-        padding: 20px 40px;
-    }
-}
-
 footer {
     background-color: #F2F2F2;
     display: flex;
@@ -553,8 +545,16 @@ footer li {
     margin-bottom: 10px;
     font-size: 18px;
 }
+@media screen and (max-width: 767px)
+{
+    footer {
+        flex-direction: column;
+        padding: 20px 40px;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 991px)
 {
     footer {
         padding: 20px 25px 50px 25px;
     }
+}
