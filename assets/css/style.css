@@ -225,7 +225,7 @@ nav a:hover {
     #searchCity form input {
         margin-right: -15px;
         width: 100%;
-        padding-left: 10px;
+        padding-left: 3%;
     }
     #searchCity form button {
         width: auto;
