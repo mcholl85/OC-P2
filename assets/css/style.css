@@ -457,7 +457,8 @@ main h3 {
 #activity a {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    overflow: hidden;
+    flex-grow: 1;
 }
 #activity figure {
     display: flex;
