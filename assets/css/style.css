@@ -454,6 +454,11 @@ main h3 {
 #activity div > div:last-child {
     margin-right: 0;
 }
+#activity a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 #activity figure {
     display: flex;
     flex-direction: column;
