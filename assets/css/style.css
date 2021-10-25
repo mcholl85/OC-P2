@@ -315,22 +315,16 @@ main h3 {
     margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    border: 5px solid white;
+    overflow: hidden;
     display: flex;
-}
+}x
 #topLodging a:last-child article {
     margin-bottom: 0;
 }
 .photoTopLogding {
     width: 40%;
     min-width: 40%;
-    border-radius: 12px 0 0 12px;
-    overflow: hidden;
-
-}
-#topLodging img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 .descTopLodging {
@@ -366,6 +360,7 @@ main h3 {
     #topLodging {
         order: 1;
         margin: 0 0 20px;
+        padding: 40px 20px;
     }
     #topLodging > div:last-child {
         display: flex;
@@ -386,13 +381,14 @@ main h3 {
     padding: 40px;
     flex: 2;
 }
-#lodging div article {
+#lodging article {
+    background-color: white;
     min-width: 180px;
     width: 30%;
-    padding: 5px;
     margin-bottom: 30px;
-    background-color: white;
+    border: 5px solid white;
     border-radius: 15px;
+    overflow: hidden;
 }
 #lodging p:last-child {
     font-weight: bold;
@@ -405,12 +401,7 @@ main h3 {
 }
 .photoLodging {
     height: 114px;
-    overflow: hidden;
-    border-radius: 15px 15px 0px 0px;
-}
-.photoLodging img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 .descLodging h3, .descLodging p, .descLodging div {
@@ -427,7 +418,7 @@ main h3 {
         background-color: white;
         padding: 40px 20px;
     }
-    #lodging div article {
+    #lodging article {
         width: 100%;
     }
     #galleryLodging {
@@ -438,6 +429,7 @@ main h3 {
 {
     #lodging {
         order: 2;
+        padding: 40px 20px;
     }
     #galleryLodging {
         padding-bottom: 0;
@@ -448,18 +440,14 @@ main h3 {
 
 #activity {
     margin: 50px;
-    display: flex;
-    flex-direction: column;
-}
-#activity div {
-    display: flex;
 }
 #activity > div {
+    display: flex;
     max-height: 485px;
-    justify-content: space-between;
 }
 #activity div > div {
     width: 25%;
+    display: flex;
     flex-direction: column;
     margin-right: 40px;
 }
@@ -469,7 +457,6 @@ main h3 {
 #activity figure {
     display: flex;
     flex-direction: column;
-    height: 100%;
     margin: 20px 0;
     border-radius: 20px;
     overflow: hidden;
@@ -492,9 +479,9 @@ main h3 {
 #park {
     flex: 10;
 }
-#activity figure img {
+#activity img {
     width: 100%;
-    flex: 1;
+    flex-grow: 1;
     object-fit: cover;
     overflow: hidden;
 }
@@ -517,7 +504,7 @@ main h3 {
         max-height: none;
     }
     #activity div > div {
-        width:100%;
+        width: 100%;
         margin-right: 0;
     }
     #activity figure {
