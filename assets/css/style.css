@@ -514,8 +514,10 @@ main h3 {
     }
     #activity figure {
         margin: 0;
-        max-height: 190px;
         margin-bottom: 20px;
+    }
+    #activity a {
+        max-height: 190px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px)
