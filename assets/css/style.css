@@ -157,7 +157,7 @@ nav a:hover {
 }
 #filters {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     align-items: baseline;
     font-size: 18px;
     font-weight: bold;
@@ -166,11 +166,11 @@ nav a:hover {
     display: flex;
 }
 #filters span {
-    margin-right: 25px;
+    margin-right: 30px;
 }
 #filters > div {
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 24px;
 }
 #filters a {
     display: flex;
@@ -185,7 +185,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     color:#0065FC;
-    font-size: 125%;
+    font-size: 110%;
     width: 50px;
     height: 50px;
     background-color: #DEEBFF;
@@ -332,7 +332,7 @@ main h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px 30px 10px 20px;
 }
 #topLodging h4 {
     margin: 0;
@@ -387,6 +387,7 @@ main h3 {
     background-color: white;
     min-width: 180px;
     width: 30%;
+    height: 200px;
     margin-bottom: 30px;
     border: 5px solid white;
     border-radius: 15px;
@@ -406,10 +407,10 @@ main h3 {
     object-fit: cover;
 }
 .descLodging {
-    margin: 10px;
+    margin: 5px 10px 5px;
 }
 .descLodging > * {
-    margin: 5px 0;
+    margin: 8px 0;
 }
 .descLodging p {
     font-size: 14px;
@@ -536,19 +537,34 @@ main h3 {
 footer {
     background-color: #F2F2F2;
     display: flex;
-    padding: 40px 50px 50px 50px;
+    padding: 45px 50px 50px 50px;
 }
 footer section {
-    margin-right: auto;
+    width: 450px;
+}
+footer h3 {
+    margin: 0 0 25px;
+}
+footer ul {
+    margin: 0
 }
 footer li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+footer li:last-child {
+    margin-bottom: 0;
 }
 @media screen and (max-width: 767px)
 {
     footer {
         flex-direction: column;
-        padding: 20px 40px;
+        padding: 40px 30px 0;
+    }
+    footer section {
+        width:auto;
+    }
+    footer li:last-child {
+        margin-bottom: 40px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px)
