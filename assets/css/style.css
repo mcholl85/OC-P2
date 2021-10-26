@@ -258,6 +258,7 @@ nav a:hover {
     }
     #filters {
         flex-direction: column;
+        gap: 20px;
     }
 }
 
