@@ -20,7 +20,7 @@ a:hover {
     border-top: 2px solid #0065FC;
 }
 article, figure {
-    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 10%);
 }
 .blueStar {
     color:#0065FC;
@@ -123,7 +123,7 @@ nav a:hover {
 #searchCity form input, #searchCity form button {
     font-family: 'Raleway';
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 #searchCity form > i {
     display: flex;
@@ -159,11 +159,13 @@ nav a:hover {
     display: flex;
     margin-bottom: 30px;
     align-items: baseline;
+    font-size: 18px;
+    font-weight: bold;
 }
 #filters div {
     display: flex;
 }
-#filters h3 {
+#filters span {
     margin-right: 25px;
 }
 #filters > div {
@@ -173,7 +175,6 @@ nav a:hover {
 #filters a {
     display: flex;
     align-items: center;
-    font-weight: bold;
     height: 46px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
@@ -195,6 +196,7 @@ nav a:hover {
 #available {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 #infoIcon {
     display: flex;
@@ -206,9 +208,6 @@ nav a:hover {
     height: 20px;
     min-width: 20px;
     font-family: 'Rokkitt', 'serif';
-}
-#available p {
-    padding-left: 10px;
 }
 
 @media screen and (max-width: 767px)
@@ -226,6 +225,7 @@ nav a:hover {
         margin-right: -15px;
         width: 100%;
         padding-left: 3%;
+        text-overflow: ellipsis;
     }
     #searchCity form button {
         width: auto;
@@ -241,7 +241,7 @@ nav a:hover {
     #filters {
         flex-wrap: wrap;
     }
-    #filters > h3 {
+    #filters > span {
         margin: 0 0 15px;
     }
     #filters > div {
@@ -297,7 +297,7 @@ main h3 {
 #topLodging {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 35px 35px 30px;
     margin-left: 40px;
     flex: 1;
 }
@@ -318,7 +318,7 @@ main h3 {
     border: 5px solid white;
     overflow: hidden;
     display: flex;
-}x
+}
 #topLodging a:last-child article {
     margin-bottom: 0;
 }
@@ -333,10 +333,11 @@ main h3 {
     justify-content: space-between;
     padding: 10px;
 }
-#topLodging h3 {
+#topLodging h4 {
     margin: 0;
 }
 #topLodging p {
+    font-size: 14px;
     margin: 0;
     padding-top: 8px;
 }
@@ -397,15 +398,20 @@ main h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 20px;
 }
 .photoLodging {
     height: 114px;
     width: 100%;
     object-fit: cover;
 }
-.descLodging h3, .descLodging p, .descLodging div {
-    margin: 8px;
+.descLodging {
+    margin: 10px;
+}
+.descLodging > * {
+    margin: 5px 0;
+}
+.descLodging p {
+    font-size: 14px;
 }
 #lodging > a {
     font-size: 120%;
@@ -441,9 +447,11 @@ main h3 {
 #activity {
     margin: 50px;
 }
+#activity h2 {
+    margin: 0;
+}
 #activity > div {
     display: flex;
-    max-height: 485px;
 }
 #activity div > div {
     width: 25%;
@@ -454,12 +462,6 @@ main h3 {
 #activity div > div:last-child {
     margin-right: 0;
 }
-#activity a {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    flex-grow: 1;
-}
 #activity figure {
     display: flex;
     flex-direction: column;
@@ -468,22 +470,22 @@ main h3 {
     overflow: hidden;
 }
 #port {
-    flex: 1;
+    height: 445px;
 }
 #fort {
-    flex: 3;
+    height: 236px;
 }
 #island {
-    flex: 2;
+    height: 165px;
 }
 #parknational {
-    flex: 1;
+    height: 445px;
 }
 #church {
-    flex: 9;
+    height: 195px;
 }
 #park {
-    flex: 10;
+    height: 210px;
 }
 #activity img {
     width: 100%;
@@ -494,7 +496,7 @@ main h3 {
 #activity figcaption {
     margin: 20px 0;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 17px;
     padding-left: 15px;
 }
 @media screen and (max-width: 767px)
@@ -514,11 +516,9 @@ main h3 {
         margin-right: 0;
     }
     #activity figure {
+        max-height: 190px;
         margin: 0;
         margin-bottom: 20px;
-    }
-    #activity a {
-        max-height: 190px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px)
@@ -537,15 +537,11 @@ footer {
     display: flex;
     padding: 40px 50px 50px 50px;
 }
-footer div {
+footer section {
     margin-right: auto;
-}
-footer h3 {
-    font-size: 21px;
 }
 footer li {
     margin-bottom: 10px;
-    font-size: 18px;
 }
 @media screen and (max-width: 767px)
 {
